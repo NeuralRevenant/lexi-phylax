@@ -1,6 +1,6 @@
 # Lexi-Phylax: Hate Speech Classification Engine
 
-Lexi-Phylax is an advanced **multi-label hate speech classification engine** designed for **accurate and scalable content moderation**. It initially leveraged a **BERT-based transformer model from Hugging Face**, fine-tuned on a custom dataset. Now, a **custom-built 400M parameter transformer model** is being developed and optimized for inference to push the boundaries of **context-aware hate speech detection**.
+Lexi-Phylax is an advanced **multi-label hate speech classification engine** designed for **accurate and scalable content moderation**. It initially leveraged a **BERT-based transformer model from Hugging Face**, fine-tuned on a custom dataset.
 
 ## System Architecture
 
@@ -17,7 +17,7 @@ graph TD;
 
 ## Features
 - **Transformer-based multi-label classification:** Detects multiple hate speech categories within a single input.
-- **Fine-tuned BERT & Custom Transformer Model:** Initially used **BERT**, transitioning to a **custom-built 400M parameter model**.
+- **Fine-tuned BERT:** Fine-tuned the pre-trained **BERT** model on a custom dataset of hate-speech with labels, doing a full fine-tuning of the model.
 - **Optimized Training Pipeline:** Includes **gradient checkpointing, mixed-precision FP16 training, and weighted loss** for class imbalance.
 - **Threshold Optimization:** Automatic **F1-maximizing threshold tuning per label**.
 - **High-performance Inference:** Supports **batch inference** for large-scale processing.
@@ -78,7 +78,6 @@ print(predictions)
 - **Kaggle datasets**
 
 ## Ongoing Enhancements
-- **Building and fine-tuning a custom 400M parameter transformer model** for improved classification accuracy.
 - **Optimizing inference speed and computational efficiency** for real-time moderation.
 - **Improving context-aware classification** to capture nuanced hate speech patterns.
 
